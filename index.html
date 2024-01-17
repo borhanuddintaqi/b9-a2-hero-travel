@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="assignment2.css">
+  <style>
+    @media screen and (max-width: 376px) {
+      html {
+        font-size: 12px;
+        color: #333;
+        letter-spacing: .7px;
+      }
+      h1 {
+        font-size: 20px;
+      }
+    #bar-icon {
+        display: inline;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+    .nav-btn {
+        display: none;
+    }
+    .nav-btn a {
+      display: none;
+
+    }
+    .header .navbar {
+      padding: 20px 30px 20px 30px;
+    }
+    .header .banner {
+      padding-top: 40px;
+      background-image: linear-gradient(180deg, #010e28c0, transparent), 
+      url("group13.png");
+      background-position: top;
+    }
+    .banner h1 {
+      margin-bottom: 10px;
+      font-size: 25px;
+    }
+    .banner p {
+      width: 320px;
+      letter-spacing: 1px;
+      margin-bottom: 30px;
+    }
+    .banner form {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 10px;
+      width: 230px;
+      padding: 16px 20px;
+    }
+    .banner .input {
+      width: 242px;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      margin: auto;
+      padding: 15px;
+    }
+    #b-f-input {
+      width: 214px;
+    }
+    .about {
+      grid-template-columns: none;
+      grid-template-rows: 1fr .9fr;
+    }
+    .about-img {
+      margin-top: 20px;
+      background-position: top;
+    }
+    .location-text {
+      margin: 15px;
+    }
+    .location-text h1 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    .location-img {
+      grid-template-columns: repeat(1,1fr);
+      grid-template-rows: repeat(7,1fr);
+      height: 1300px;
+      
+    }
+    .maldives, .indunesia, .srilanka, .america, .kashmir, .bangladesh, .bandarban{
+      grid-column-start: 1;
+      grid-column-end: 8;
+      font-size: 20px;
+    }
+    .feature {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,.3fr,1fr);
+    gap: 15px;
+   }
+
+   .feature .feature-text {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 5;
+   }
+   .feature-text h1 {
+    margin-bottom: 10px;
+   }
+   .feature .f-box1, .feature .f-box2, .feature .f-box3 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+   }
+   .deals-text {
+    margin: 30px;
+   }
+   .d-box1 .box1-cnt, .d-box2 .box2-cnt, .d-box3 .box3-cnt {
+    width: 90%;
+    padding: 30px;
+    margin: 150px 10px 15px 10px;
+   }
+   .box1-cnt h2, .box2-cnt h2, .box3-cnt h2 {
+    margin: 20px 0px 10px 0px;
+   }
+   .box1-cnt i, .box2-cnt i, .box3-cnt i {
+    margin: 5px 0px 5px 15px;
+   }
+   .short {
+    display: none;
+    
+   }
+   .news {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    margin-top: 10px;
+   }
+   .news-form {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 295px;
+   }
+   .news-form input {
+    width: 90%;
+   }
+   #button {
+    width: 97%;
+   }
+   .news-img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 340px;
+    background-size: 130%;
+    height: 200px;
+   }
+   .news-img .n-img-text {
+    margin-top: 135px;
+    margin-left: 195px;
+    width: 120px;
+   }
+   .footer {
+    margin-top: 15px;
+    padding: 20px;
+   }
+   .footer .f-logo {
+    margin-left: 60px;
+   }
+   .footer i{
+    font-size: 2rem;
+   }
+   .last-text {
+    margin-bottom: 15px;
+   }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <!--Navigation bar start-->
+    <div class="navbar">
+      <div class="nav-logo">
+        <img src="Group 40071 (2).png" alt="">
+        <span>TAQI<u> TOUR</u></span>
+      </div>
+      <ul class="nav-btn">
+        <li><a href="#"><u>Home</u></a></li>
+        <li><a href="#">Packages</a></li>
+        <li><a href="#">Testimonial</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <i class="fa-solid fa-bars" id="bar-icon"></i>
+    </div>
+    <!-- Hero content start-->
+    <div class="banner wdt">
+      <h1>Explore Your Travel</h1>
+      <p>Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In et odio enim ac quis sapien urna eu phasellus.</p>
+      <form>
+        <input type="text" placeholder="Where go" class="input" id="b-f-input">
+        <select class="input">
+          <option>When</option>
+        </select>
+        <select class="input">
+          <option>Select Type</option>
+        </select>
+        <button class="input"><i class="fa-solid fa-magnifying-glass"></i> Find Now</button>
+      </form>
+    </div>
+  </div>
+  <div class="about wdt">
+    <div class="about-text">
+      <h1>Our Popular Tours</h1>
+    <span>Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit <br> massa. Sodales dictumst nec nibh pellentesque.</span>
+    <ul>
+      <li>Tempus euismod lacus mauris dignissim quis in ultrices. <br> Magna nullam odio neque diam. Sociis erat at .</li>
+      <li>Adipiscing ornare pellentesque mauris volutpat tortor vitae platea <br> porta lacus. Lectus suspendisse nullam.</li>
+      <li>Accumsan eget et turpis praesent lorem egestas enim elit bibendum. <br> Risus at in.</li>
+      <span>Amet consectetur.  Vulputate commodo felis molestie risus <br> 
+        ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. <br> Habitant adipiscing risus natoque aliquet. Id bibendum nunc senectus semper tincidunt. </span>
+        <input type="button" value="Read More">
+    </ul>
+    </div>
+    <div class="about-img"></div>
+  </div>
+  <div class="location wdt">
+    <div class="location-text">
+      <h1>Choose Your Destination</h1>
+      <span>Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. <br> Sodales dictumst nec nibh pellentesque.</span>
+    </div>
+    <div class="location-img">
+      <div class="maldives">Maldives</div>
+      <div class="indunesia">Indunesia</div>
+      <div class="srilanka">Srilanka</div>
+      <div class="america">North America</div>
+      <div class="kashmir">Kashmir</div>
+      <div class="bangladesh">Bangladesh</div>
+      <div class="bandarban">Bandarban</div>
+    </div>
+  </div>
+  <div class="feature wdt">
+    <div class="feature-text">
+      <h1>Why Choose Us</h1>
+      <span>Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. <br> Sodales dictumst nec nibh pellentesque.</span>
+    </div>
+    <div class="f-box1">
+      <img src="hotel.png" alt="">
+      <h2>Handpicked Hotels</h2>
+      <span>Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. </span>
+    </div>
+    <div class="f-box2">
+      <img src="map.png" alt="">
+      <h2>World Class Service</h2>
+      <span>Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. </span>
+    </div>
+    <div class="f-box3">
+      <img src="price.png" alt="">
+      <h2>Best Price Guarantee</h2>
+      <span>Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. </span>
+    </div>
+  </div>
+  <div class="deals wdt">
+    <div class="deals-text" >
+      <h1>Deals & Discounts</h1>
+      <span>Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</span>
+    </div>
+    <div class="d-box1">
+      <div class="box1-cnt">
+        <span><i class="fa-solid fa-clock"></i> 7 Day / 6 Night</span>
+        <span><i class="fa-solid fa-users"></i> Max : 10</span>
+        <span><i class="fa-solid fa-location-dot"></i> Malaysia</span>
+        <h2>Tour To Satorini</h2>
+        <span>Amet consectetur. Vulputate commodo felis molestie risus <b class="short"> ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing.</b></span>
+          <h3><u>Price: $1300-$1500</u></h3>
+          <button>Book Now</button>
+      </div>
+    </div>
+    <div class="d-box2">
+      <div class="box2-cnt">
+        <span><i class="fa-solid fa-clock"></i> 7 Day / 6 Night</span>
+        <span><i class="fa-solid fa-users"></i> Max : 10</span>
+        <span><i class="fa-solid fa-location-dot"></i> Malaysia</span>
+        <h2>Tour To Satorini</h2>
+        <span>Amet consectetur. Vulputate commodo felis molestie risus <b class="short"> ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing.</b></span>
+          <h3><u>Price: $1300-$1500</u></h3>
+          <button>Book Now</button>
+      </div>
+    </div>
+    <div class="d-box3">
+      <div class="box3-cnt">
+        <span><i class="fa-solid fa-clock"></i> 7 Day / 6 Night</span>
+        <span><i class="fa-solid fa-users"></i> Max : 10</span>
+        <span><i class="fa-solid fa-location-dot"></i> Malaysia</span>
+        <h2>Tour To Satorini</h2>
+        <span>Amet consectetur. Vulputate commodo felis molestie risus <b class="short"> ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing.</b></span>
+          <h3><u>Price: $1300-$1500</u></h3>
+          <button>Book Now</button>
+      </div>
+    </div>
+  </div>
+  <button class="btn1">See All Packages</button>
+   <div class="about wdt">
+    <div class="about-text">
+      <h1>A Simple Perfect Place To Get Lost</h1>
+    <span>Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis.</span>
+    <ul>
+      <b><li>Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam.</li>
+        <li>Adipiscing ornare pellentesque mauris volutpat tortor vitae platea <br> porta lacus. Lectus suspendisse nullam.</li></b>
+        <button id="btn">See More</button>
+    </ul>
+    </div>
+    <div class="about-img pt2">
+      <h3>Watch Our Mountain in Bangladesh</h3>
+    </div>
+  </div>
+  <div class="news wdt">
+    <div class="news-form">
+      <h2>Newsletter</h2>
+      <span>Get your daily dose of travel news & tips. Sign up today!</span>
+      <input type="text" placeholder="Enter your name">
+      <input type="email" placeholder="Enter your email">
+      <input type="submit" value="Subscribe" id="button">
+    </div>
+    <div class="news-img">
+      <div class="n-img-text">
+      <span>Travel.com</span>
+        <span>Save up to 70%</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="f-logo">
+      <img src="Group 40071 (2).png" alt="">
+      <h2>TAQI<u> TOUR</u></h2>
+    </div>
+    <span id="text">Lorem ipsum dolor sit amet consectetur. Nulla sit viverra morbi vitae blandit orci potenti vulputate. <br>Leo erat maecenas vitae elementum ultricies nullam. </span>
+    <div class="icons">
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-github"></i>
+    </div>
+    <hr>
+    <div class="last-text">
+      <span>2017, All Rights Reserved.</span>
+    </div>
+  </div>
+
+</body>
+</html>
